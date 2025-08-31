@@ -1,0 +1,35 @@
+.moving-tape {
+  background-color: var(--vermilion-bird);
+  padding: 18px 0;
+  display: flex;
+  justify-content: center; /* Центрируем по горизонтали */
+  overflow: hidden;
+}
+
+.moving-tape__list {
+  display: flex;
+  gap: 32px;
+  white-space: nowrap;
+  flex-wrap: nowrap;
+
+  animation: marquee 25s infinite linear;
+}
+
+.moving-tape__item {
+  font-family: 'Merriweather', serif;
+  font-size: 22px;
+  font-weight: 400;
+  color: var(--white);
+  list-style-type: disc;
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-25%);
+  }
+}

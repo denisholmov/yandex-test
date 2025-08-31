@@ -1,0 +1,40 @@
+.tournament-promo {
+  padding: 80px 0 17px 0;
+}
+
+.tournament-promo__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tournament-promo__title {
+  max-width: 764px;
+  text-transform: uppercase;
+
+  font-family: 'Merriweather', serif;
+  font-size: 36px;
+  font-weight: 400;
+  color: var(--off-black);
+  line-height: 1.35;
+  letter-spacing: 3px;
+}
+
+.tournament-promo__title span {
+  color: var(--vermilion-bird);
+  font-weight: 700;
+  letter-spacing: 0.2px;
+}
+
+.tournament-promo__img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tournament-promo__img img {
+  width: 394px;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
