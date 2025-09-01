@@ -21,3 +21,9 @@
   font-weight: 500;
   src: url('../../fonts/Golos_Text/GolosText-Medium.ttf');
 }
+
+@font-face {
+  font-family: 'Golos-Text';
+  font-weight: 600;
+  src: url('../../fonts/Golos_Text/GolosText-SemiBold.ttf');
+}

@@ -1,0 +1,36 @@
+.vasyuki-transformation__title {
+  margin-bottom: 54px;
+  position: relative;
+
+  font-size: 54px;
+  font-family: 'Merriweather', serif;
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: 5px;
+  color: var(--off-black);
+
+  text-transform: uppercase;
+
+  & span {
+    position: absolute;
+    bottom: 13px;
+    left: 300px;
+
+    font-size: 20px;
+    font-family: 'Golos-Text', sans-serif;
+    font-weight: 400;
+    color: var(--neptune-blue);
+    line-height: 1;
+    letter-spacing: 0;
+  }
+}
+
+.vasyuki-transformation__stages {
+  display: grid;
+  grid-template-columns: ;
+}
+
+.vasyuki-transformation__item {
+  background-image: url('../../../images/vasyuki-transformation/background.png');
+  overflow: hidden;
+}

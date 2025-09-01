@@ -16,6 +16,7 @@
 }
 
 .moving-tape__item {
+  gap: 32px;
   font-family: 'Merriweather', serif;
   font-size: 22px;
   font-weight: 400;
