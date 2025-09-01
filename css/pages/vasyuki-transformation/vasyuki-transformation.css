@@ -88,8 +88,8 @@
 
 .stage-item__img img {
   position: absolute;
-  right: -55px;
-  bottom: -34px;
+  right: 0;
+  bottom: 0;
 
   width: 394px;
   height: auto;
