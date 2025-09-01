@@ -1,6 +1,5 @@
 .get-started {
   background-image: url('../../../images/get-started/background.jpg');
-
   background-repeat: no-repeat;
   background-size: cover;
   background-position: right;
@@ -57,21 +56,21 @@
 
 .menu__btn {
   padding: 20px 49px;
-  border-radius: 66px;
   width: 100%;
   min-width: 263px;
 
   display: flex;
   align-items: center;
   justify-content: center;
-  text-align: center;
+  border: none;
 
+  text-align: center;
   font-size: 16px;
   font-family: 'Golos-Text', sans-serif;
   font-weight: 500;
   line-height: 0.9;
 
-  border: none;
+  border-radius: 66px;
 }
 
 .filled {
@@ -80,17 +79,17 @@
 }
 
 .filled:hover {
-  background-color: var(--dandy-lion);
   color: var(--umbra);
+  background-color: var(--dandy-lion);
 }
 
 .transparent {
+  color: var(--umbra);
   background-color: none;
   border: 2px solid var(--umbra);
-  color: var(--umbra);
 }
 
 .transparent:hover {
-  background-color: var(--umbra);
   color: var(--white);
+  background-color: var(--umbra);
 }

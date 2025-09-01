@@ -48,13 +48,15 @@
 
 .bender-session__table {
   margin-bottom: 48px;
-  border-collapse: collapse;
   width: 100%;
-  border: none;
+
   font-family: 'Golos-Text', sans-serif;
   font-size: 20px;
   line-height: 1.2;
   color: var(--off-black);
+
+  border-collapse: collapse;
+  border: none;
 }
 
 .bender-session__table th,
@@ -70,9 +72,10 @@
 
 .bender-session__table th {
   width: 290px;
-  text-align: left;
   padding-left: 0;
   padding-right: 0;
+
+  text-align: left;
   font-weight: 400;
 }
 
@@ -92,8 +95,8 @@
 }
 
 .bender-session__table del {
-  text-decoration-color: var(--vermilion-bird);
   margin-right: 12px;
+  text-decoration-color: var(--vermilion-bird);
 }
 
 .bender-session__table ins {
