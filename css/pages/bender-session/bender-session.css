@@ -48,57 +48,56 @@
 
 .bender-session__table {
   margin-bottom: 48px;
-
   border-collapse: collapse;
   width: 100%;
   border: none;
-
   font-family: 'Golos-Text', sans-serif;
   font-size: 20px;
   line-height: 1.2;
   color: var(--off-black);
+}
 
-  & th,
-  & td {
-    padding: 16px;
-    border-bottom: 2px solid var(--ancestral-water);
+.bender-session__table th,
+.bender-session__table td {
+  padding: 16px;
+  border-bottom: 2px solid var(--ancestral-water);
+}
 
-    &:not(:last-child) {
-      border-right: 2px solid var(--ancestral-water);
-    }
-  }
+.bender-session__table th:not(:last-child),
+.bender-session__table td:not(:last-child) {
+  border-right: 2px solid var(--ancestral-water);
+}
 
-  & th {
-    width: 290px;
-    text-align: left;
-    padding-left: 0;
-    padding-right: 0;
+.bender-session__table th {
+  width: 290px;
+  text-align: left;
+  padding-left: 0;
+  padding-right: 0;
+  font-weight: 400;
+}
 
-    font-weight: 400;
-  }
+.bender-session__table td {
+  font-weight: 600;
+}
 
-  & td {
-    font-weight: 600;
-  }
+.bender-session__table tr:first-child td,
+.bender-session__table tr:first-child th {
+  padding-top: 0;
+}
 
-  & tr:first-child td,
-  tr:first-child th {
-    padding-top: 0;
-  }
+.bender-session__table tr:last-child td,
+.bender-session__table tr:last-child th {
+  border-bottom: none;
+  padding-bottom: 0;
+}
 
-  & tr:last-child td,
-  tr:last-child th {
-    border-bottom: none;
-    padding-bottom: 0;
-  }
+.bender-session__table del {
+  text-decoration-color: var(--vermilion-bird);
+  margin-right: 12px;
+}
 
-  & del {
-    text-decoration-color: var(--vermilion-bird);
-    margin-right: 12px;
-  }
-  & ins {
-    text-decoration: none;
-  }
+.bender-session__table ins {
+  text-decoration: none;
 }
 
 .bender-session__contact-info a {

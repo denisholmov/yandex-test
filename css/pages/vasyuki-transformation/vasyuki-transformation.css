@@ -10,19 +10,19 @@
   color: var(--off-black);
 
   text-transform: uppercase;
+}
 
-  & span {
-    position: absolute;
-    bottom: 13px;
-    left: 300px;
+.vasyuki-transformation span {
+  position: absolute;
+  bottom: 13px;
+  left: 300px;
 
-    font-size: 20px;
-    font-family: 'Golos-Text', sans-serif;
-    font-weight: 400;
-    color: var(--neptune-blue);
-    line-height: 1;
-    letter-spacing: 0;
-  }
+  font-size: 20px;
+  font-family: 'Golos-Text', sans-serif;
+  font-weight: 400;
+  color: var(--neptune-blue);
+  line-height: 1;
+  letter-spacing: 0;
 }
 
 .vasyuki-transformation__stages {
