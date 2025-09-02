@@ -8,10 +8,6 @@
     <title>Document</title>
   </head>
   <body>
-    <svg style="display: none">
-      <use href="sprite/sprite.svg#arrow-icon"></use>
-    </svg>
-
     <div class="wrapper">
       <main>
         <div class="get-started">
@@ -32,20 +28,22 @@
                 Оплатите взнос на телеграммы для организации Международного васюкинского турнира по шахматам
               </p>
 
-              <ul class="get-started__menu">
-                <li>
-                  <button class="menu__btn filled">
-                    Поддержать <br />
-                    шахматную мысль
-                  </button>
-                </li>
-                <li>
-                  <button class="menu__btn transparent">
-                    Подробнее <br />
-                    о турнире
-                  </button>
-                </li>
-              </ul>
+              <nav>
+                <ul class="get-started__menu">
+                  <li>
+                    <a href="#tournament-promo" class="menu__link filled">
+                      Поддержать <br />
+                      шахматную мысль
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#vasyuki-transformation" class="menu__link transparent">
+                      Подробнее <br />
+                      о турнире
+                    </a>
+                  </li>
+                </ul>
+              </nav>
             </section>
           </div>
         </div>
@@ -102,7 +100,7 @@
           </ul>
         </section>
 
-        <section class="tournament-promo">
+        <section id="tournament-promo" class="tournament-promo">
           <div class="tournament-promo__container">
             <h2 class="tournament-promo__title">
               Чтобы поддержать Международный васюкинский турнир посетите лекцию на тему:
@@ -154,7 +152,7 @@
           </div>
         </section>
 
-        <section class="vasyuki-transformation">
+        <section id="vasyuki-transformation" class="vasyuki-transformation">
           <div class="vasyuki-transformation__container">
             <h2 class="vasyuki-transformation__title">
               Этапы преображения <br />
