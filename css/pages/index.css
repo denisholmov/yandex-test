@@ -7,6 +7,3 @@
 @import url('./vasyuki-transformation/vasyuki-transformation.css');
 @import url('./tournament-participants/tournament-participants.css');
 @import url('./footer/footer.css');
-
-@import url('./media/media1200.css') (max-width: 1200px);
-@import url('./media/media768.css') (max-width: 768px);
