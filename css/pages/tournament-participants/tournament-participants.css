@@ -1,0 +1,109 @@
+.tournament-participants {
+  margin-bottom: 140px;
+}
+
+.tournament-participants__container {
+  display: flex;
+  flex-direction: column;
+}
+
+.tournament-participants__header {
+  margin-bottom: 60px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.tournament-participants__title {
+  font-family: 'Merriweather', serif;
+  font-size: 54px;
+  font-weight: 400;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.controls__btn {
+  background-color: inherit;
+}
+
+.controls__btn:hover circle {
+  fill: var(--dandy-lion);
+}
+
+.controls__btn:disabled svg circle {
+  fill: #d6d6d6;
+}
+
+.controls__counter {
+  color: var(--off-black);
+}
+
+.tournament-participants__list {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.tournament-participants__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 37px;
+
+  font-family: 'Golos-Text' sans-serif;
+  line-height: 1.2;
+  color: var(--off-black);
+  text-align: center;
+}
+
+.tournament-participants__img {
+  margin-bottom: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tournament-participants__img img {
+  width: 320px;
+  max-width: 100%;
+  height: auto;
+
+  object-fit: contain;
+}
+
+.tournament-participants__name {
+  margin-bottom: 6px;
+
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.tournament-participants__role {
+  margin-bottom: 20px;
+
+  font-weight: 400;
+  font-size: 20px;
+  opacity: 0.6;
+}
+
+.tournament-participants__btn {
+  padding: 12px;
+
+  font-size: 16px;
+  font-family: 'Golos-Text', sans-serif;
+  font-weight: 500;
+  color: var(--neptune-blue);
+  line-height: 1.2;
+
+  border: 1px solid var(--neptune-blue);
+  border-radius: 62px;
+  background-color: inherit;
+}
+
+.tournament-participants__btn:hover {
+  color: var(--white);
+  background-color: var(--neptune-blue);
+}

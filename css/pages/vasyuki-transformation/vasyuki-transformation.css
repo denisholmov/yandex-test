@@ -1,10 +1,14 @@
 .vasyuki-transformation {
+  margin-bottom: 200px;
   overflow: hidden;
 }
 
-.vasyuki-transformation__title {
-  position: relative;
+.vasyuki-transformation {
+  display: flex;
+  flex-direction: column;
+}
 
+.vasyuki-transformation__title {
   margin-bottom: 54px;
 
   font-size: 54px;
@@ -18,15 +22,13 @@
 }
 
 .vasyuki-transformation span {
-  position: absolute;
-  bottom: 13px;
-  left: 300px;
+  display: inline-block;
 
   font-size: 20px;
   font-family: 'Golos-Text', sans-serif;
   font-weight: 400;
   color: var(--neptune-blue);
-  line-height: 1;
+  line-height: 1.2;
   letter-spacing: 0;
 }
 

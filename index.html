@@ -8,6 +8,10 @@
     <title>Document</title>
   </head>
   <body>
+    <svg style="display: none">
+      <use href="sprite/sprite.svg#arrow-icon"></use>
+    </svg>
+
     <div class="wrapper">
       <main>
         <div class="get-started">
@@ -199,7 +203,133 @@
             </ul>
           </div>
         </section>
+
+        <section class="tournament-participants">
+          <div class="tournament-participants__container">
+            <div class="tournament-participants__header">
+              <h2 class="tournament-participants__title">Участники турнира</h2>
+              <div class="tournament-participants__controls controls">
+                <button class="controls__btn controls--next">
+                  <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="22" cy="22" r="22" fill="#313131" />
+                    <path
+                      d="M24.5382 13.5384L16.0767 21.9999L24.5382 30.4615"
+                      stroke="white"
+                      stroke-width="2"
+                      stroke-linecap="square"
+                    />
+                  </svg>
+                </button>
+
+                <div class="controls__counter">1 / 6</div>
+
+                <button class="controls__btn controls--prev">
+                  <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="22" cy="22" r="22" fill="#313131" />
+                    <path
+                      d="M19.4618 13.5384L27.9233 21.9999L19.4618 30.4615"
+                      stroke="white"
+                      stroke-width="2"
+                      stroke-linecap="square"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+
+            <ul class="tournament-participants__list">
+              <li class="tournament-participants__item">
+                <div class="tournament-participants__img">
+                  <img src="./images/tournament-participants/participant.png" alt="Участник" />
+                </div>
+
+                <h3 class="tournament-participants__name">Хозе-Рауль Капабланка</h3>
+                <p class="tournament-participants__role">Чемпион мира по шахматам</p>
+                <button class="tournament-participants__btn">Подробнее</button>
+              </li>
+              <li class="tournament-participants__item">
+                <div class="tournament-participants__img">
+                  <img src="./images/tournament-participants/participant.png" alt="Участник" />
+                </div>
+
+                <h3 class="tournament-participants__name">Эммануил Ласкер</h3>
+                <p class="tournament-participants__role">Чемпион мира по шахматам</p>
+                <button class="tournament-participants__btn">Подробнее</button>
+              </li>
+              <li class="tournament-participants__item">
+                <div class="tournament-participants__img">
+                  <img src="./images/tournament-participants/participant.png" alt="Участник" />
+                </div>
+
+                <h3 class="tournament-participants__name">Александр Алехин</h3>
+                <p class="tournament-participants__role">Чемпион мира по шахматам</p>
+                <button class="tournament-participants__btn">Подробнее</button>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="moving-tape">
+          <ul class="moving-tape__list">
+            <li class="moving-tape__item">
+              <span class="moving-tape__text">Дело помощи утопающим — дело рук самих утопающих!</span>
+            </li>
+
+            <li class="moving-tape__item">
+              <span class="moving-tape__text">Шахматы двигают вперёд не только культуру, но и экономику!</span>
+            </li>
+
+            <li class="moving-tape__item">
+              <span class="moving-tape__text">Лед тронулся, господа присяжные заседатели!</span>
+            </li>
+
+            <li class="moving-tape__item">
+              <span class="moving-tape__text">Дело помощи утопающим — дело рук самих утопающих!</span>
+            </li>
+
+            <li class="moving-tape__item">
+              <span class="moving-tape__text">Шахматы двигают вперёд не только культуру, но и экономику!</span>
+            </li>
+
+            <li class="moving-tape__item">
+              <span class="moving-tape__text">Лед тронулся, господа присяжные заседатели!</span>
+            </li>
+
+            <li class="moving-tape__item">
+              <span class="moving-tape__text">Дело помощи утопающим — дело рук самих утопающих!</span>
+            </li>
+
+            <li class="moving-tape__item">
+              <span class="moving-tape__text">Шахматы двигают вперёд не только культуру, но и экономику!</span>
+            </li>
+
+            <li class="moving-tape__item">
+              <span class="moving-tape__text">Лед тронулся, господа присяжные заседатели!</span>
+            </li>
+
+            <li class="moving-tape__item">
+              <span class="moving-tape__text">Дело помощи утопающим — дело рук самих утопающих!</span>
+            </li>
+
+            <li class="moving-tape__item">
+              <span class="moving-tape__text">Шахматы двигают вперёд не только культуру, но и экономику!</span>
+            </li>
+
+            <li class="moving-tape__item">
+              <span class="moving-tape__text">Лед тронулся, господа присяжные заседатели!</span>
+            </li>
+          </ul>
+        </section>
       </main>
+
+      <footer class="footer">
+        <div class="footer__container">
+          <p>
+            Все персонажи, события и цитаты являются вымышленными и не принадлежат создателям сайта. С подробностями
+            можно познакомиться в главе XXXIV романа Ильи Ильфа и Евгения Петрова «Двенадцать стульев».
+          </p>
+        </div>
+      </footer>
     </div>
   </body>
 </html>

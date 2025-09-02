@@ -1,0 +1,16 @@
+.footer {
+  background-color: var(--polite-white);
+}
+
+.footer__container {
+  padding-top: 40px;
+  padding-bottom: 72px;
+}
+
+.footer p {
+  font-family: 'Golos-Text', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.2;
+  color: var(--off-black);
+}
