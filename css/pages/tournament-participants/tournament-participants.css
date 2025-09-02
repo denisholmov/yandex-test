@@ -11,12 +11,43 @@
   margin-bottom: 60px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .tournament-participants__title {
   font-family: 'Merriweather', serif;
   font-size: 54px;
   font-weight: 400;
+  margin: 0;
+}
+
+.tournament-participants__slider {
+  position: relative;
+  overflow: hidden;
+}
+
+.tournament-participants__list {
+  display: flex;
+  transition: transform 0.3s ease;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  gap: 0;
+}
+
+.tournament-participants__item {
+  flex: 0 0 calc(33.333% - 40px);
+  min-width: calc(33.333% - 40px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 37px;
+  margin: 0 20px;
+  font-family: 'Golos-Text', sans-serif;
+  line-height: 1.2;
+  color: var(--off-black);
+  text-align: center;
+  box-sizing: border-box;
 }
 
 .controls {
@@ -26,36 +57,35 @@
 }
 
 .controls__btn {
-  background-color: inherit;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.controls__btn:hover circle {
+.controls__btn:hover:not(:disabled) circle {
   fill: var(--dandy-lion);
 }
 
-.controls__btn:disabled svg circle {
+.controls__btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.controls__btn:disabled circle {
   fill: #d6d6d6;
 }
 
 .controls__counter {
   color: var(--off-black);
-}
-
-.tournament-participants__list {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-}
-
-.tournament-participants__item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 0 37px;
-
-  font-family: 'Golos-Text' sans-serif;
-  line-height: 1.2;
-  color: var(--off-black);
+  font-family: 'Golos-Text', sans-serif;
+  font-size: 16px;
+  min-width: 50px;
   text-align: center;
 }
 
@@ -70,20 +100,17 @@
   width: 320px;
   max-width: 100%;
   height: auto;
-
   object-fit: contain;
 }
 
 .tournament-participants__name {
   margin-bottom: 6px;
-
   font-size: 24px;
   font-weight: 600;
 }
 
 .tournament-participants__role {
   margin-bottom: 20px;
-
   font-weight: 400;
   font-size: 20px;
   opacity: 0.6;
@@ -91,16 +118,15 @@
 
 .tournament-participants__btn {
   padding: 12px;
-
   font-size: 16px;
   font-family: 'Golos-Text', sans-serif;
   font-weight: 500;
   color: var(--neptune-blue);
   line-height: 1.2;
-
   border: 1px solid var(--neptune-blue);
   border-radius: 62px;
   background-color: inherit;
+  cursor: pointer;
 }
 
 .tournament-participants__btn:hover {

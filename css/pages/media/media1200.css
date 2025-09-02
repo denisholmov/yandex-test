@@ -1,0 +1,10 @@
+@media (max-width: 1200px) {
+  [class*='__container'] {
+    max-width: 850px;
+  }
+
+  .tournament-participants__item {
+    flex: 0 0 calc(50% - 40px);
+    min-width: calc(50% - 40px);
+  }
+}

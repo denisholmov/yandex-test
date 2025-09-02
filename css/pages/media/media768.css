@@ -1,0 +1,16 @@
+@media (max-width: 768px) {
+  [class*='__container'] {
+    max-width: 600px;
+  }
+
+  .tournament-participants__item {
+    flex: 0 0 calc(100% - 40px); /* 1 элемент */
+    min-width: calc(100% - 40px);
+  }
+
+  .tournament-participants__header {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+}

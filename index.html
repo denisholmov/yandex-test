@@ -207,7 +207,7 @@
             <div class="tournament-participants__header">
               <h2 class="tournament-participants__title">Участники турнира</h2>
               <div class="tournament-participants__controls controls">
-                <button class="controls__btn controls--next">
+                <button class="controls__btn controls__btn--prev">
                   <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <circle cx="22" cy="22" r="22" fill="#313131" />
                     <path
@@ -221,7 +221,7 @@
 
                 <div class="controls__counter">1 / 6</div>
 
-                <button class="controls__btn controls--prev">
+                <button class="controls__btn controls__btn--next">
                   <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <circle cx="22" cy="22" r="22" fill="#313131" />
                     <path
@@ -235,35 +235,63 @@
               </div>
             </div>
 
-            <ul class="tournament-participants__list">
-              <li class="tournament-participants__item">
-                <div class="tournament-participants__img">
-                  <img src="./images/tournament-participants/participant.png" alt="Участник" />
-                </div>
+            <div class="tournament-participants__slider">
+              <ul class="tournament-participants__list">
+                <li class="tournament-participants__item">
+                  <div class="tournament-participants__img">
+                    <img src="./images/tournament-participants/participant.png" alt="Участник" />
+                  </div>
+                  <h3 class="tournament-participants__name">Хозе-Рауль Капабланка</h3>
+                  <p class="tournament-participants__role">Чемпион мира по шахматам</p>
+                  <button class="tournament-participants__btn">Подробнее</button>
+                </li>
 
-                <h3 class="tournament-participants__name">Хозе-Рауль Капабланка</h3>
-                <p class="tournament-participants__role">Чемпион мира по шахматам</p>
-                <button class="tournament-participants__btn">Подробнее</button>
-              </li>
-              <li class="tournament-participants__item">
-                <div class="tournament-participants__img">
-                  <img src="./images/tournament-participants/participant.png" alt="Участник" />
-                </div>
+                <li class="tournament-participants__item">
+                  <div class="tournament-participants__img">
+                    <img src="./images/tournament-participants/participant.png" alt="Участник" />
+                  </div>
+                  <h3 class="tournament-participants__name">Эммануил Ласкер</h3>
+                  <p class="tournament-participants__role">Чемпион мира по шахматам</p>
+                  <button class="tournament-participants__btn">Подробнее</button>
+                </li>
 
-                <h3 class="tournament-participants__name">Эммануил Ласкер</h3>
-                <p class="tournament-participants__role">Чемпион мира по шахматам</p>
-                <button class="tournament-participants__btn">Подробнее</button>
-              </li>
-              <li class="tournament-participants__item">
-                <div class="tournament-participants__img">
-                  <img src="./images/tournament-participants/participant.png" alt="Участник" />
-                </div>
+                <li class="tournament-participants__item">
+                  <div class="tournament-participants__img">
+                    <img src="./images/tournament-participants/participant.png" alt="Участник" />
+                  </div>
+                  <h3 class="tournament-participants__name">Александр Алехин</h3>
+                  <p class="tournament-participants__role">Чемпион мира по шахматам</p>
+                  <button class="tournament-participants__btn">Подробнее</button>
+                </li>
 
-                <h3 class="tournament-participants__name">Александр Алехин</h3>
-                <p class="tournament-participants__role">Чемпион мира по шахматам</p>
-                <button class="tournament-participants__btn">Подробнее</button>
-              </li>
-            </ul>
+                <li class="tournament-participants__item">
+                  <div class="tournament-participants__img">
+                    <img src="./images/tournament-participants/participant.png" alt="Участник" />
+                  </div>
+                  <h3 class="tournament-participants__name">Хозе-Рауль Капабланка</h3>
+                  <p class="tournament-participants__role">Чемпион мира по шахматам</p>
+                  <button class="tournament-participants__btn">Подробнее</button>
+                </li>
+
+                <li class="tournament-participants__item">
+                  <div class="tournament-participants__img">
+                    <img src="./images/tournament-participants/participant.png" alt="Участник" />
+                  </div>
+                  <h3 class="tournament-participants__name">Эммануил Ласкер</h3>
+                  <p class="tournament-participants__role">Чемпион мира по шахматам</p>
+                  <button class="tournament-participants__btn">Подробнее</button>
+                </li>
+
+                <li class="tournament-participants__item">
+                  <div class="tournament-participants__img">
+                    <img src="./images/tournament-participants/participant.png" alt="Участник" />
+                  </div>
+                  <h3 class="tournament-participants__name">Александр Алехин</h3>
+                  <p class="tournament-participants__role">Чемпион мира по шахматам</p>
+                  <button class="tournament-participants__btn">Подробнее</button>
+                </li>
+              </ul>
+            </div>
           </div>
         </section>
 
@@ -329,5 +357,7 @@
         </div>
       </footer>
     </div>
+
+    <script src="./js/index.js"></script>
   </body>
 </html>
