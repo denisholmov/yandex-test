@@ -1,3 +1,7 @@
+.vasyuki-transformation {
+  overflow: hidden;
+}
+
 .vasyuki-transformation__title {
   position: relative;
 
@@ -27,12 +31,29 @@
 }
 
 .vasyuki-transformation__stages {
+  position: relative;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-auto-rows: auto;
   gap: 20px;
 
   font-family: 'Golos-Text', sans-serif;
+}
+
+.vasyuki-transformation__stages:before {
+  content: '';
+
+  position: absolute;
+  bottom: -10px;
+  right: -70px;
+  width: 450px;
+  height: 270px;
+
+  background-image: url('../../../images/vasyuki-transformation/plane.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  z-index: 1;
 }
 
 .vasyuki-transformation__stage-item {
@@ -79,20 +100,9 @@
 .vasyuki-transformation__stage-item p {
   margin-left: 52px;
   width: 100%;
-  max-width: 446px;
+  max-width: 400px;
 
   font-size: 20px;
   font-weight: 500;
   color: var(--off-black);
-}
-
-.stage-item__img img {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-
-  width: 394px;
-  height: auto;
-
-  object-fit: contain;
 }
