@@ -1,65 +1,57 @@
-class TournamentSlider {
-  constructor() {
-    this.list = document.querySelector('.tournament-participants__list');
-    this.items = document.querySelectorAll('.tournament-participants__item');
-    this.prevBtn = document.querySelector('.controls__btn--prev');
-    this.nextBtn = document.querySelector('.controls__btn--next');
-    this.counter = document.querySelector('.controls__counter');
+document.addEventListener('DOMContentLoaded', function () {
+  const list = document.querySelector('.tournament-participants__list');
+  const items = document.querySelectorAll('.tournament-participants__item');
+  const prevBtn = document.querySelector('.controls__btn--prev');
+  const nextBtn = document.querySelector('.controls__btn--next');
+  const counter = document.querySelector('.controls__counter');
 
-    this.currentIndex = 0;
-    this.itemsPerView = 3;
-    this.totalSlides = Math.ceil(this.items.length / this.itemsPerView);
+  let currentIndex = 0;
+  let isMobile = window.innerWidth <= 768;
+  let itemsPerView = isMobile ? 1 : 3;
+  let totalSlides = Math.ceil(items.length / itemsPerView);
 
-    this.init();
+  function updateSlider() {
+    if (!items[0]) return;
+
+    const newIsMobile = window.innerWidth <= 768;
+    if (newIsMobile !== isMobile) {
+      isMobile = newIsMobile;
+      itemsPerView = isMobile ? 1 : 3;
+      totalSlides = Math.ceil(items.length / itemsPerView);
+      currentIndex = 0;
+    }
+
+    const itemWidth = items[0].offsetWidth + 40;
+    const offset = -currentIndex * itemWidth * itemsPerView;
+
+    list.style.transform = `translateX(${offset}px)`;
+    prevBtn.disabled = currentIndex === 0;
+    nextBtn.disabled = currentIndex === totalSlides - 1;
+    counter.textContent = `${currentIndex + 1} / ${totalSlides}`;
   }
 
-  init() {
-    this.updateSlider();
-
-    this.prevBtn.addEventListener('click', () => this.prev());
-    this.nextBtn.addEventListener('click', () => this.next());
-
-    window.addEventListener('resize', () => this.handleResize());
-  }
-
-  prev() {
-    if (this.currentIndex > 0) {
-      this.currentIndex--;
-      this.updateSlider();
+  function prev() {
+    if (currentIndex > 0) {
+      currentIndex--;
+      updateSlider();
     }
   }
 
-  next() {
-    if (this.currentIndex < this.totalSlides - 1) {
-      this.currentIndex++;
-      this.updateSlider();
+  function next() {
+    if (currentIndex < totalSlides - 1) {
+      currentIndex++;
+      updateSlider();
     }
   }
 
-  updateSlider() {
-    const itemWidth = this.items[0].offsetWidth + 40; // width + margin
-    const offset = -this.currentIndex * itemWidth * this.itemsPerView;
-    this.list.style.transform = `translateX(${offset}px)`;
-
-    this.updateButtons();
-    this.updateCounter();
+  let resizeTimeout;
+  function handleResize() {
+    clearTimeout(resizeTimeout);
+    resizeTimeout = setTimeout(updateSlider, 100);
   }
 
-  updateButtons() {
-    this.prevBtn.disabled = this.currentIndex === 0;
-    this.nextBtn.disabled = this.currentIndex === this.totalSlides - 1;
-  }
-
-  updateCounter() {
-    const current = this.currentIndex + 1;
-    this.counter.textContent = `${current} / ${this.totalSlides}`;
-  }
-
-  handleResize() {
-    this.updateSlider();
-  }
-}
-
-document.addEventListener('DOMContentLoaded', () => {
-  new TournamentSlider();
+  updateSlider();
+  prevBtn.addEventListener('click', prev);
+  nextBtn.addEventListener('click', next);
+  window.addEventListener('resize', handleResize);
 });

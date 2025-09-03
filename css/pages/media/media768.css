@@ -107,4 +107,59 @@
   .bender-session__table tr:last-child {
     border: none !important;
   }
+
+  /* vasyuki-transformation */
+
+  .vasyuki-transformation__title {
+    margin-bottom: 148px;
+
+    font-size: 36px;
+  }
+
+  .vasyuki-transformation__stages:before {
+    top: -140px;
+    right: 0;
+    width: 330px;
+    height: 180px;
+
+    background-size: 100%;
+  }
+
+  /* tournament-participants */
+  .tournament-participants {
+    margin-bottom: 80px;
+  }
+
+  .tournament-participants__header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .tournament-participants__title {
+    font-size: 36px;
+    margin-bottom: 40px;
+  }
+
+  .tournament-participants__item {
+    flex: 0 0 calc(100% - 40px) !important;
+    min-width: calc(100% - 40px) !important;
+    padding: 0 20px;
+  }
+
+  .tournament-participants__img img {
+    width: 280px;
+  }
+
+  .tournament-participants__name {
+    font-size: 20px;
+  }
+
+  .tournament-participants__role {
+    font-size: 18px;
+  }
+
+  .controls {
+    align-self: center;
+  }
 }
