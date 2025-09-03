@@ -1,0 +1,5 @@
+@media (max-width: 375px) {
+  [class*='__container'] {
+    max-width: 335px;
+  }
+}

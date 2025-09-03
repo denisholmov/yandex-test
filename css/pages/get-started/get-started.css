@@ -19,14 +19,14 @@
   position: absolute;
   z-index: 1;
 
-  bottom: 0px;
+  bottom: -3px;
   right: -200px;
   width: 1623px;
   height: 100%;
 
   background-image: url('../../../images/get-started/chess-background.png');
   background-repeat: no-repeat;
-  background-size: auto;
+  background-size: 100% auto;
   background-position: center;
 }
 
@@ -34,8 +34,10 @@
   position: relative;
   z-index: 2;
 
+  width: 100%;
   max-width: 542px;
 }
+
 .get-started__title {
   margin-bottom: 24px;
 
@@ -78,12 +80,13 @@
   flex: 1;
 }
 
-.menu__link {
+.get-started__link {
   padding: 20px 49px;
   width: 100%;
-  min-width: 263px;
 
-  display: inline-block;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
 
   text-align: center;
   font-size: 16px;
@@ -92,25 +95,30 @@
   line-height: 0.9;
 
   border-radius: 66px;
+  white-space: normal;
+
+  /* Общие стили для всех ссылок */
+  text-decoration: none;
+  transition: all 0.3s ease;
 }
 
-.filled {
+.get-started__link--filled {
   color: var(--white);
   background-color: var(--umbra);
 }
 
-.filled:hover {
+.get-started__link--filled:hover {
   color: var(--umbra);
   background-color: var(--dandy-lion);
 }
 
-.transparent {
+.get-started__link--transparent {
   color: var(--umbra);
-  background-color: none;
+  background-color: transparent;
   border: 2px solid var(--umbra);
 }
 
-.transparent:hover {
+.get-started__link--transparent:hover {
   color: var(--white);
   background-color: var(--umbra);
 }

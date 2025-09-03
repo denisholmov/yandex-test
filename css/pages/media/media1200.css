@@ -1,0 +1,19 @@
+@media (max-width: 1200px) {
+  [class*='__container'] {
+    max-width: 850px;
+  }
+
+  /* get-started */
+
+  .get-started__container:before {
+    right: -550px;
+  }
+
+  .get-started__content {
+    max-width: 500px;
+  }
+
+  .get-started__title {
+    font-size: 50px;
+  }
+}

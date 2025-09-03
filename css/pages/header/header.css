@@ -1,3 +1,16 @@
 .header {
   margin-bottom: 62px;
 }
+
+.header__logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.header__logo img {
+  width: 245px;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
