@@ -21,10 +21,15 @@
 }
 
 .tournament-promo__title span {
-  color: var(--vermilion-bird);
-  font-weight: 700;
   letter-spacing: 0.2px;
 }
+
+.tournament-promo__highlight {
+  color: var(--vermilion-bird);
+  font-weight: 700;
+}
+
+
 
 .tournament-promo__img {
   display: flex;

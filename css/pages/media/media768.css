@@ -2,4 +2,109 @@
   [class*='__container'] {
     max-width: 600px;
   }
+
+  /* get-started */
+  .get-started__container:before {
+    bottom: 0;
+    right: -750px;
+  }
+
+  /* tournament-promo */
+
+  .tournament-promo__container {
+    display: grid;
+    grid-template-areas:
+      'text1'
+      'image'
+      'text2'
+      'highlight';
+    justify-items: center;
+  }
+
+  .tournament-promo__text-part1 {
+    grid-area: text1;
+    margin-bottom: 24px;
+  }
+
+  .tournament-promo__text-part1 br {
+    display: none;
+  }
+
+  .tournament-promo__img {
+    grid-area: image;
+    margin-bottom: 24px;
+  }
+
+  .tournament-promo__text-part2 {
+    grid-area: text2;
+  }
+
+  .tournament-promo__highlight {
+    grid-area: highlight;
+  }
+
+  .tournament-promo__title {
+    display: contents;
+    font-size: 28px;
+    text-align: center;
+    max-width: 100%;
+    letter-spacing: 1px;
+  }
+
+  .tournament-promo__text-part1,
+  .tournament-promo__text-part2,
+  .tournament-promo__highlight {
+    text-align: left;
+    width: 100%;
+  }
+
+  /* bender-session */
+
+  .bender-session {
+    margin-bottom: 120px;
+  }
+
+  .bender-session__container {
+    flex-direction: column;
+    gap: 19px;
+  }
+
+  .bender-session__img {
+    padding-top: 0;
+  }
+
+  .bender-session__title {
+    margin-bottom: 44px;
+
+    font-size: 28px;
+  }
+
+  .bender-session__table {
+    margin-bottom: 40px;
+  }
+
+  .bender-session__table tr {
+    display: flex;
+    flex-direction: column;
+
+    border-radius: 8px;
+  }
+
+  .bender-session__table th,
+  .bender-session__table td {
+    padding: 12px 0;
+  }
+
+  .bender-session__table th {
+    border: none !important;
+  }
+
+  .bender-session__table td {
+    padding-top: 0;
+  }
+
+  .bender-session__table tr:first-child,
+  .bender-session__table tr:last-child {
+    border: none !important;
+  }
 }

@@ -16,4 +16,10 @@
   .get-started__title {
     font-size: 50px;
   }
+
+  /* tournament-promo */
+
+  .tournament-promo__title {
+    max-width: 500px;
+  }
 }
