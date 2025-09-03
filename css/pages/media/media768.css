@@ -110,10 +110,23 @@
 
   /* vasyuki-transformation */
 
+  .vasyuki-transformation {
+    margin-bottom: 120px;
+  }
+
+  .vasyuki-transformation__container {
+    overflow: hidden;
+  }
+
   .vasyuki-transformation__title {
     margin-bottom: 148px;
 
     font-size: 36px;
+  }
+
+  .vasyuki-transformation__stages {
+    grid-template-columns: repeat(7, 100%);
+    grid-template-rows: repeat(1, 1fr);
   }
 
   .vasyuki-transformation__stages:before {
@@ -125,7 +138,24 @@
     background-size: 100%;
   }
 
-  
+  .vasyuki-transformation__stage-item {
+    width: 100%;
+  }
+
+  .vasyuki-transformation__stages {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  .vasyuki-transformation__stage-item {
+    flex: 0 0 100%;
+    min-width: 100%;
+    scroll-snap-align: start;
+  }
 
   /* tournament-participants */
   .tournament-participants {
