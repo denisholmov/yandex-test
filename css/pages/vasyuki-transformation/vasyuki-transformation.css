@@ -24,18 +24,6 @@
   letter-spacing: 0;
 }
 
-.vasyuki-transformation__slider {
-  display: block;
-}
-
-.vasyuki-transformation__slides {
-  display: block;
-}
-
-.vasyuki-transformation__slide {
-  display: block;
-}
-
 .vasyuki-transformation__stages {
   position: relative;
   display: grid;
